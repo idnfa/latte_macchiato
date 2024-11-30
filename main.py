@@ -129,7 +129,7 @@ class NewWidget(QMainWindow, Ui_MainWindow):
                 return True
 
             except Exception as e:
-                QMessageBox.critical(self, 'Ошибка', f'Не удалось добавить: {str(e)}')
+                QMessageBox.critical(self, 'Ошибка', f'Не удалось добавить: {str(e)}.')
                 return False
 
         elif self.parent().Flag == 'change':
